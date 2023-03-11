@@ -1,0 +1,161 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch C_Permu",
+            "request": "launch",
+            "mainClass": "C_Permu",
+            "projectName": "CP(JAVA)_cee80d26"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch A_GamingForces",
+            "request": "launch",
+            "mainClass": "A_GamingForces",
+            "projectName": "CP(JAVA)_cee80d26"
+        },
+        {
+            "type": "java",
+            "name": "Launch A_Polycarp_and_the_Day_of_Pi",
+            "request": "launch",
+            "mainClass": "A_Polycarp_and_the_Day_of_Pi",
+            "projectName": "CP(JAVA)_cee80d26"
+        },
+        {
+            "type": "java",
+            "name": "Launch B_Stand_up_Comedian",
+            "request": "launch",
+            "mainClass": "B_Stand_up_Comedian",
+            "projectName": "CP(JAVA)_cee80d26"
+        },
+        {
+            "type": "java",
+            "name": "Launch B_Taisia_and_Dice",
+            "request": "launch",
+            "mainClass": "B_Taisia_and_Dice",
+            "projectName": "CP(JAVA)_cee80d26"
+        },
+        {
+            "type": "java",
+            "name": "Launch nTriplets",
+            "request": "launch",
+            "mainClass": "Codechef.codechef_02_01.nTriplets",
+            "projectName": "CP(JAVA)_cee80d26"
+        },
+        {
+            "type": "java",
+            "name": "Launch noSequences",
+            "request": "launch",
+            "mainClass": "Codechef.codechef_02_01.noSequences",
+            "projectName": "CP(JAVA)_cee80d26"
+        },
+        {
+            "type": "java",
+            "name": "Launch flipthe",
+            "request": "launch",
+            "mainClass": "Codechef.codechef_28_12.flipthe",
+            "projectName": "CP(JAVA)_cee80d26"
+        },
+        {
+            "type": "java",
+            "name": "Launch petstroe",
+            "request": "launch",
+            "mainClass": "Codechef.codechef_28_12.petstroe",
+            "projectName": "CP(JAVA)_cee80d26"
+        },
+        {
+            "type": "java",
+            "name": "Launch HallofFame",
+            "request": "launch",
+            "mainClass": "Codeforces_03_01.HallofFame",
+            "projectName": "CP(JAVA)_cee80d26"
+        },
+        {
+            "type": "java",
+            "name": "Launch MKnezs",
+            "request": "launch",
+            "mainClass": "Codeforces_03_01.MKnezs",
+            "projectName": "CP(JAVA)_cee80d26"
+        },
+        {
+            "type": "java",
+            "name": "Launch leastPrefix",
+            "request": "launch",
+            "mainClass": "Codeforces_03_01.leastPrefix",
+            "projectName": "CP(JAVA)_cee80d26"
+        },
+        {
+            "type": "java",
+            "name": "Launch evenSubarraya",
+            "request": "launch",
+            "mainClass": "Codeforces_27_12.evenSubarraya",
+            "projectName": "CP(JAVA)_cee80d26"
+        },
+        {
+            "type": "java",
+            "name": "Launch joeymoney",
+            "request": "launch",
+            "mainClass": "Codeforces_27_12.joeymoney",
+            "projectName": "CP(JAVA)_cee80d26"
+        },
+        {
+            "type": "java",
+            "name": "Launch killdogs",
+            "request": "launch",
+            "mainClass": "Codeforces_27_12.killdogs",
+            "projectName": "CP(JAVA)_cee80d26"
+        },
+        {
+            "type": "java",
+            "name": "Launch abh",
+            "request": "launch",
+            "mainClass": "abh",
+            "projectName": "CP(JAVA)_cee80d26"
+        },
+        {
+            "type": "java",
+            "name": "Launch decompress",
+            "request": "launch",
+            "mainClass": "codeforces_05_01.decompress",
+            "projectName": "CP(JAVA)_cee80d26"
+        },
+        {
+            "type": "java",
+            "name": "Launch quick_sort",
+            "request": "launch",
+            "mainClass": "codeforces_05_01.quick_sort",
+            "projectName": "CP(JAVA)_cee80d26"
+        },
+        {
+            "type": "java",
+            "name": "Launch koxia",
+            "request": "launch",
+            "mainClass": "codeforces_30_12.koxia",
+            "projectName": "CP(JAVA)_cee80d26"
+        },
+        {
+            "type": "java",
+            "name": "Launch koxia2",
+            "request": "launch",
+            "mainClass": "codeforces_30_12.koxia2",
+            "projectName": "CP(JAVA)_cee80d26"
+        },
+        {
+            "type": "java",
+            "name": "Launch numberTheory",
+            "request": "launch",
+            "mainClass": "codeforces_30_12.numberTheory",
+            "projectName": "CP(JAVA)_cee80d26"
+        }
+    ]
+}
