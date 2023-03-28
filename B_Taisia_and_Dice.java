@@ -6,7 +6,6 @@ public class B_Taisia_and_Dice{
         while(t-- > 0){
             int n = sc.nextInt();
             int s = sc.nextInt();
-            int r = sc.n
 
 
         }

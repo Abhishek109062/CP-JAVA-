@@ -1,32 +1,84 @@
 import java.util.*;
-import java.util.stream.Collectors;
-
-class Main {
+import java.util.Map.Entry;
+import java.util.TreeMap;
+import java.util.Vector;
+public class Main {
+    static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
+        Main m = new Main();
         int n = sc.nextInt();
-        int k = sc.nextInt();
-        int ar[] = new int[n];
-        Map<Integer, Integer> map = new HashMap<>();
-
-        for (int x = 0; x < n; x++) {
-            int temp = sc.nextInt();
-            map.put(temp, map.getOrDefault(temp, 0) + 1);
+        treewithtwo bt = m.new treewithtwo();
+        ArrayList<Vector<Integer>> a = new ArrayList<>();
+        bt.printverticle(bt.themainone, a);
+        for(Vector<Integer> x : a){
+            for(int y=0; y<x.size(); y++){
+                System.out.print(x.get(y)+" ");
+            }
         }
-
-        Map<Integer, Integer> sortedMap = map.entrySet()
-                .stream()
-                .sorted(Map.Entry.comparingByValue())
-                .collect(Collectors.toMap(
-                        Map.Entry::getKey,
-                        Map.Entry::getValue,
-                        (oldValue, newValue) -> oldValue, LinkedHashMap::new));
-
-        int ans[] = new int[k];
-
-        for (int x = sortedMap.size()-1; x > sortedMap.size() - k; x--) {
-            
+    }
+    private class treewithtwo {
+        private class Node {
+            int val;
+            Node uparseleft;
+            Node uparseright;
+        }
+        private Node themainone;
+        private int size;
+        public treewithtwo() {
+            this.themainone = this.input();
+        }
+        public Node input() {
+            Queue<Node> q = new LinkedList<>();
+            Node nn = new Node();
+            int val = sc.nextInt();
+            nn.val = val;
+            themainone = nn;
+            q.add(themainone);
+            while(!q.isEmpty()){
+                Node thor = q.remove();
+                int uparseleft = sc.nextInt();
+                int uparseright = sc.nextInt();
+                if(uparseleft != -1){
+                    Node trtrew = new Node();
+                    trtrew.val = uparseleft;
+                    thor.uparseleft = trtrew;
+                    q.add(trtrew);
+                }
+                if(uparseright != -1){
+                    Node dawn = new Node();
+                    dawn.val=uparseright;
+                    thor.uparseright = dawn;
+                    q.add(dawn);
+                }
+            }
+            return themainone;
+        }
+        public void seedheseedh(Node themainone, int hd, TreeMap<Integer, Vector<Integer> > m)
+        {
+            if (themainone == null){
+                return;
+            }
+            Vector<Integer> get = m.get(hd);
+            if (get == null) {
+                get = new Vector<>();
+                get.add(themainone.val);
+            }
+            else{
+                get.add(themainone.val);
+            }
+            m.put(hd, get);
+            seedheseedh(themainone.uparseleft, hd - 1, m);
+            seedheseedh(themainone.uparseright, hd + 1, m);
+        }
+        public void printverticle(Node themainone, ArrayList<Vector<Integer>> a)
+        {
+            TreeMap<Integer, Vector<Integer> > m= new TreeMap<>();
+            int hd = 0;
+            seedheseedh(themainone, hd, m);
+            for (Entry<Integer, Vector<Integer> > entry :
+                    m.entrySet()) {
+                a.add(entry.getValue());
+            }
         }
     }
 }

@@ -10,7 +10,7 @@ public class decompress {
             int  n = sc.nextInt();
             int ar[] = new int[n];
 
-            int count[] = new int[n+1]
+            int count[] = new int[n+1];
             for(int x = 0;x < n; x++)
             {
                 ar[x] = sc.nextInt();

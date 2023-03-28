@@ -31,11 +31,11 @@ public class B_Following_Directions{
                 }
             }
 
-            // System.out.println(x + " " + y);
-            if(flag)
+             if(flag)
             System.out.println("YES");
             else
-            System.out.println("NO");
+            System.out.println("NO"); // System.out.println(x + " " + y);
+          
        }
         
     }
